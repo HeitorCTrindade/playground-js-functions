@@ -1,16 +1,20 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(value1, value2) {
+  if (value1 === false || value2 === false) {
+    return false;
+  }
+  return true;
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return ((base * height) / 2);
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(sentence) {
+  let arraySplit = sentence.split(' ');
+  return arraySplit;
 }
 
 // Desafio 4
