@@ -63,7 +63,6 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-// eslint-disable-next-line complexity
 function fizzBuzz(numbers) {
   let arrayFizzBuzz = [];
   for (let i = 0; i < numbers.length; i += 1) {

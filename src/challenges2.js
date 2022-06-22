@@ -15,10 +15,8 @@ function mostFrequencyNumber(numbers) {
 }
 
 // Desafio 11
-// eslint-disable-next-line complexity
 function generatePhoneNumber(telNumber) {
   let formatNumber = "";
-
   if (telNumber.length !== 11) {
     return ('Array com tamanho incorreto.');
   }
