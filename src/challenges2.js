@@ -1,16 +1,16 @@
 function mostFrequencyNumber(numbers) {
+  const freqMap = new Map();
   let contMFrequency = 0;
-  for (let i = 0; i < numbers.length; i += 1) {
-    let contTemp = 0;
-    for (let j = 0; j < numbers.length; j += 1) {
-      if (numbers[i] === numbers[j]) {
-        contTemp += 1;
-      }
-    }
-    if (contTemp > contMFrequency) {
-      contMFrequency = contTemp;
+
+  for (const numKey of numbers) {
+    const freq = freqMap.get(numKey) || 0;
+    const newFreq = freq + 1;
+    freqMap.set(numKey, newFreq);
+    if (newFreq > contMFrequency) {
+      contMFrequency = freq + 1;
     }
   }
+
   return contMFrequency;
 }
 
