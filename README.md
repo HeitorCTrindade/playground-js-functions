@@ -62,7 +62,7 @@ npm install
 4. Para executar os testes das funções voce pode utilizar o comando `npm test`. É possível testar cada arquivo individualmente, conforme o exemplo abaixo.
 ```
 npm test tests/*nome.do.arquivo*.js
-
+```
 
 ## Habilidades
 <ul>
