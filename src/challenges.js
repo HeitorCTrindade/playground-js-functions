@@ -19,7 +19,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(arrayStr) {
-  return (`${arrayStr[arrayStr.length - 1]}, ${arrayStr[0]}`);
+  return `${arrayStr[arrayStr.length - 1]}, ${arrayStr[0]}`;
 }
 
 // Desafio 5
@@ -66,17 +66,15 @@ function IsBuzzOrFizz(number) {
   if (number % 3 === 0 && number % 5 === 0) {
     return 'fizzBuzz';
   }
-
   if (number % 3 === 0) {
     return 'fizz';
   }
-
   if (number % 5 === 0) {
     return 'buzz';
   }
-
   return 'bug!';
 }
+
 // Desafio 8
 function fizzBuzz(numbers) {
   let arrayFizzBuzz = [];
@@ -120,7 +118,7 @@ function techList(array, string) {
     object.tech = array[i];
     listObjects.push(object);
   }
-  return (listObjects);
+  return listObjects;
 }
 
 module.exports = {

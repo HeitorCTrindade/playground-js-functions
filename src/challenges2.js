@@ -16,19 +16,16 @@ function mostFrequencyNumber(numbers) {
 
 // Desafio 11
 function generatePhoneNumber(telNumber) {
-  let formatNumber = '';
   if (telNumber.length !== 11) {
     return ('Array com tamanho incorreto.');
   }
   if (mostFrequencyNumber(telNumber) >= 3) {
     return ('não é possível gerar um número de telefone com esses valores');
   }
-  for (let i = 0; i < telNumber.length; i += 1) {
-    formatNumber += telNumber[i];
-    if (telNumber[i] < 0 || telNumber[i] > 9) {
-      return ('não é possível gerar um número de telefone com esses valores');
-    }
+  if (telNumber.some((num) => num < 0 || num > 9)) {
+    return ('não é possível gerar um número de telefone com esses valores');
   }
+  const formatNumber = telNumber.join('');
   return (`(${formatNumber.slice(0, 2)}) ${formatNumber.slice(2, 7)}-${formatNumber.slice(7, 11)}`);
 }
 
