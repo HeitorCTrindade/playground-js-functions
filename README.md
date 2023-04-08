@@ -13,7 +13,6 @@
   </ol>
 </details>
 
-<br>
 
 ## Sobre o Projeto
 Olá, esse é o README do projeto Playgroud Functions, segundo projeto desenvolvido durante o curso de Desenvolvimento Web da Trybe.
@@ -34,7 +33,7 @@ Descrição da funcionalidade de cada função dos desafios:
 11. `generatePhoneNumber`: Gera um número de telefone a partir de um array de 11 números. O numero gerado deve possuir obrigatóriamente o seguinte formato '(XX) XXXXX-XXXX'. Devem ser implementadas as seguintes validações:
 
     - Caso o Array não possua 11 numeros deve ser retornado a frase: 'Array com tamanho incorreto'.
-    - Caso algum dos números constantes no array for maior do que '9' ou menor do que 0 retorne a frase: 'não é possível gerar um número de telefone com esses valores'.
+    - Caso algum dos números constantes no array for maior do que '9' ou menor do que '0' retorne a frase: 'não é possível gerar um número de telefone com esses valores'.
     - Caso algum dos números se repita mais do que três (3) vezes no array retorne a frase: 'não é possível gerar um número de telefone com esses valores'.
     
 12. `triangleCheck`: Verifica se é possível formar um triângulo.
